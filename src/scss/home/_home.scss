@@ -1,4 +1,22 @@
 .home {
+  .line-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    .line {
+      position: relative;
+      height: 100%;
+      border-right: 1px solid $light;
+      width: 100%;
+    }
+  }
+
   header {
     height: 100vh;
     width: 100%;
@@ -6,6 +24,34 @@
     align-items: center;
     justify-content: center;
     padding: 0 100px;
+    position: relative;
+
+    .links {
+      position: absolute;
+      left: 30px;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: 50px;
+          }
+
+          a {
+            color: $text;
+            font-size: 24px;
+            transition: color .2s ease-in-out;
+
+            &:hover {
+              color: $text_hover;
+            }
+          }
+        }
+      }
+    }
 
     h1 {
       letter-spacing: 5px;
@@ -13,6 +59,7 @@
       font-weight: 500;
       margin-right: -60px;
       margin-bottom: 20px;
+      font-family: 'MoolBoran', sans-serif;
     }
 
     span {
@@ -22,12 +69,243 @@
     }
 
     .image {
-      background-image: url('/07.png');
+      background-image: url('/images/07.png');
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: 50% 30%;
       height: 100%;
       width: 30%;
+    }
+
+    .scroll {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      transform-origin: top right;
+      transform: rotate(90deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        display: block;
+        margin-right: 20px;
+      }
+
+      .line {
+        border-bottom: 2px solid $text;
+        height: 3px;
+        width: 60px;
+        position: relative;
+
+        &:after {
+          content: '';
+          height: 2px;
+          width: 10px;
+          display: block;
+          border-left: 15px solid $text;
+          transform: rotate(-45deg);
+          transform-origin: bottom right;
+          position: absolute;
+          right: -8px;
+          top: -6px;
+        }
+      }
+    }
+  }
+
+  section.projects {
+    padding: 0 150px 50px 150px;
+    position: relative;
+
+    .header {
+      h2 {
+        font-size: 100px;
+        font-weight: 200;
+        font-family: 'MoolBoran', sans-serif;
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+
+      span {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $text;
+        letter-spacing: 2px;
+        font-weight: 200;
+      }
+    }
+
+    .projects-wrapper {
+      margin-top: 150px;
+
+      .project {
+        min-height: 150px;
+        margin-bottom: 50px;
+        position: relative;
+
+        &:hover {
+          a {
+            color: $white;
+          }
+
+          .background {
+            width: 100vw;
+          }
+
+          .index:before {
+            border-top: 2px solid $white;
+          }
+
+          .action .action-inner {
+            margin-top: 20px;
+
+            .action-background {
+              width: 350px;
+            }
+
+            .arrow {
+              border-bottom: 2px solid $white;
+
+              &:after {
+                border-left: 25px solid $white;
+              }
+            }
+
+            span {
+              color: $white;
+            }
+          }
+        }
+
+        .background {
+          background-color: $test;
+          height: 200px;
+          width: 0;
+          position: absolute;
+          left: -150px;
+          top: -75px;
+          z-index: -1;
+          transition: width .5s ease-in-out;
+        }
+
+        a {
+          text-decoration: none;
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          color: $text;
+          transition: color .2s ease-in-out;
+        }
+
+        .index {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-right: 30px;
+
+          &:before {
+            content: '';
+            height: 2px;
+            width: 130px;
+            border-top: 2px solid $text;
+            display: block;
+            position: absolute;
+            left: -150px;
+            margin-bottom: 8px;
+            transition: border-top .2s ease-in-out;
+          }
+
+          span {
+            font-weight: 700;
+            font-family: 'MoolBoran', sans-serif;
+            font-size: 24px;
+            display: block;
+          }
+        }
+
+        .content {
+          h4 {
+            margin-top: 0;
+            font-family: 'MoolBoran', sans-serif;
+            font-size: 28px;
+            font-weight: 200;
+            text-transform: uppercase;
+            line-height: 28px;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+          }
+
+          span {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 200;
+            letter-spacing: 2px;
+          }
+        }
+
+        .action {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
+          .action-inner {
+            position: relative;
+            transition: margin-top .5s ease-in-out;
+
+            .action-background {
+              position: absolute;
+              height: 120px;
+              width: 0;
+              background-color: $text;
+              top: -50px;
+              z-index: -1;
+              right: -150px;
+              transition: width .5s ease-in-out;
+            }
+
+            .arrow {
+              border-bottom: 2px solid $text;
+              height: 3px;
+              width: 150px;
+              position: relative;
+              margin-bottom: 20px;
+              transition: border-bottom .2s ease-in-out;
+              transition-delay: .3s;
+
+              &:after {
+                content: '';
+                height: 2px;
+                width: 10px;
+                display: block;
+                border-left: 25px solid $text;
+                transform: rotate(45deg);
+                transform-origin: top right;
+                position: absolute;
+                right: -8px;
+                top: 9px;
+                transition: border-left .2s ease-in-out;
+                transition-delay: .3s;
+              }
+            }
+
+            span {
+              text-transform: uppercase;
+              font-weight: 200;
+              font-size: 12px;
+              letter-spacing: 2px;
+              color: $text;
+              transition: color .2s ease-in-out;
+              transition-delay: .3s;
+            }
+          }
+        }
+      }
     }
   }
 }
