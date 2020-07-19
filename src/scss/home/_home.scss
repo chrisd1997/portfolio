@@ -1,0 +1,33 @@
+.home {
+  header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
+
+    h1 {
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-right: -60px;
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+    .image {
+      background-image: url('/07.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 50% 30%;
+      height: 100%;
+      width: 30%;
+    }
+  }
+}

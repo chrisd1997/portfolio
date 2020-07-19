@@ -1,0 +1,58 @@
+nav {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 200;
+
+  a {
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+    color: $text;
+
+    &:hover {
+      color: $text_hover;
+    }
+  }
+
+  .logo {
+    font-size: 64px;
+    line-height: 64px;
+    font-family: 'MoolBoran', sans-serif;
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-icon {
+    -webkit-appearance: none;
+    border: 0;
+    outline: none;
+    color: $text;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+    transition: color .2s ease-in-out;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+
+    &:hover {
+      color: $text_hover;
+      cursor: pointer;
+    }
+  }
+}

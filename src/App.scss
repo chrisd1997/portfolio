@@ -1,0 +1,15 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// Globals
+$text: #1A1A1A;
+$white: #F7F7F7;
+
+// Other
+@import './scss/container';
+
+// Reset
+@import './scss/reset';
+
+// Pages
+@import './scss/home/home';
