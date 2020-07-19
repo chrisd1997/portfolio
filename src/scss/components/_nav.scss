@@ -96,7 +96,7 @@
 
     li {
       margin-bottom: 30px;
-      font-size: 64px;
+      font-size: 40px;
       text-transform: uppercase;
       text-align: center;
       font-weight: 500;
@@ -111,7 +111,7 @@
       a {
         color: $text_hover;
         text-decoration: none;
-        font-family: 'MoolBoran', sans-serif;
+        font-family: 'Armata', sans-serif;
         position: relative;
         display: block;
         transform: translateY(100px);
@@ -141,20 +141,20 @@
           height: 1px;
           top: 18px;
           opacity: 0;
-          transition: all .2s ease-in-out;
+          transition: all .4s ease-in-out;
         }
 
         &:before {
           content: attr(data-index);
           position: absolute;
-          font-family: 'MoolBoran', sans-serif;
+          font-family: 'Armata', sans-serif;
           font-size: 2.5em;
           left: 50%;
           transform: translateX(-50%);
           z-index: -1;
           color: $dark;
           opacity: 0;
-          top: -25px;
+          top: -30px;
           transition: opacity .2s ease-in-out;
         }
       }

@@ -59,7 +59,7 @@
       font-weight: 500;
       margin-right: -60px;
       margin-bottom: 20px;
-      font-family: 'MoolBoran', sans-serif;
+      font-family: 'Armata', sans-serif;
     }
 
     span {
@@ -125,7 +125,7 @@
       h2 {
         font-size: 100px;
         font-weight: 200;
-        font-family: 'MoolBoran', sans-serif;
+        font-family: 'Armata', sans-serif;
         margin-bottom: 20px;
         margin-top: 0;
       }
@@ -150,6 +150,7 @@
         &:hover {
           a {
             color: $white;
+            transition-delay: .4s;
           }
 
           .background {
@@ -158,6 +159,7 @@
 
           .index:before {
             border-top: 2px solid $white;
+            transition-delay: .4s;
           }
 
           .action .action-inner {
@@ -189,7 +191,7 @@
           left: -150px;
           top: -75px;
           z-index: -1;
-          transition: width .5s ease-in-out;
+          transition: width .5s ease-in-out .3s;
         }
 
         a {
@@ -199,7 +201,7 @@
           flex-direction: row;
           align-items: flex-start;
           color: $text;
-          transition: color .2s ease-in-out;
+          transition: color .2s ease-in-out .6s;
         }
 
         .index {
@@ -217,12 +219,12 @@
             position: absolute;
             left: -150px;
             margin-bottom: 8px;
-            transition: border-top .2s ease-in-out;
+            transition: border-top .2s ease-in-out .6s;
           }
 
           span {
             font-weight: 700;
-            font-family: 'MoolBoran', sans-serif;
+            font-family: 'Armata', sans-serif;
             font-size: 24px;
             display: block;
           }
@@ -231,7 +233,7 @@
         .content {
           h4 {
             margin-top: 0;
-            font-family: 'MoolBoran', sans-serif;
+            font-family: 'Armata', sans-serif;
             font-size: 28px;
             font-weight: 200;
             text-transform: uppercase;
@@ -256,7 +258,7 @@
 
           .action-inner {
             position: relative;
-            transition: margin-top .5s ease-in-out;
+            transition: margin-top .5s ease-in-out .4s;
 
             .action-background {
               position: absolute;
@@ -266,7 +268,7 @@
               top: -50px;
               z-index: -1;
               right: -150px;
-              transition: width .5s ease-in-out;
+              transition: width .5s ease-in-out .4s;
             }
 
             .arrow {
@@ -276,7 +278,7 @@
               position: relative;
               margin-bottom: 20px;
               transition: border-bottom .2s ease-in-out;
-              transition-delay: .3s;
+              transition-delay: .5s;
 
               &:after {
                 content: '';
@@ -290,7 +292,7 @@
                 right: -8px;
                 top: 9px;
                 transition: border-left .2s ease-in-out;
-                transition-delay: .3s;
+                transition-delay: .5s;
               }
             }
 
@@ -301,7 +303,7 @@
               letter-spacing: 2px;
               color: $text;
               transition: color .2s ease-in-out;
-              transition-delay: .3s;
+              transition-delay: .5s;
             }
           }
         }
