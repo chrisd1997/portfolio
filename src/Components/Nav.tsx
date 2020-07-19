@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    Link,
+    NavLink,
 } from "react-router-dom";
 import Icon from "./Icon";
 
@@ -53,24 +53,24 @@ const Nav = ({open}: {open: boolean}) => {
 
             <ul className="nav-items">
                 <li>
-                    <Link to="/" data-index="01">
+                    <NavLink to="/" strict={true} data-index="01" activeClassName="active">
                         Home
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="#" data-index="02">
+                    <NavLink to="/about" strict={true} data-index="02" activeClassName="active">
                         About
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="#" data-index="03">
+                    <NavLink to="/projects" strict={true} data-index="03" activeClassName="active">
                         Projects
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="#" data-index="04">
+                    <NavLink to="/contact" strict={true} data-index="04" activeClassName="active">
                         Contact
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
         </div>
