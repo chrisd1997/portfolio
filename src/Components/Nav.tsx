@@ -53,22 +53,22 @@ const Nav = ({open}: {open: boolean}) => {
 
             <ul className="nav-items">
                 <li>
-                    <NavLink to="/" strict={true} data-index="01" activeClassName="active">
+                    <NavLink to="/" exact={true} data-index="01" activeClassName="active">
                         Home
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about" strict={true} data-index="02" activeClassName="active">
+                    <NavLink to="/about" exact={true} data-index="02" activeClassName="active">
                         About
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects" strict={true} data-index="03" activeClassName="active">
+                    <NavLink to="/projects" exact={true} data-index="03" activeClassName="active">
                         Projects
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact" strict={true} data-index="04" activeClassName="active">
+                    <NavLink to="/contact" exact={true} data-index="04" activeClassName="active">
                         Contact
                     </NavLink>
                 </li>
