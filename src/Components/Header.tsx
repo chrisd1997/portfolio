@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Icon from './Icon';
+import {Link} from "react-router-dom";
 
 const Header = ({toggleNav}: {toggleNav: Function}) => {
     const [navOpen, setNavOpen] = useState(false);
@@ -12,9 +12,9 @@ const Header = ({toggleNav}: {toggleNav: Function}) => {
     return (
         <nav className={`${navOpen ? 'open' : ''}`}>
             <span className="logo">
-                <a href="#">
+                <Link to="/">
                     C
-                </a>
+                </Link>
             </span>
 
             <button
