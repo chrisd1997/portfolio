@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Icon from "../Components/Icon";
+import Lines from "../Components/Lines";
 
 const Contact = () => {
     const [fields, setFields] = useState({
@@ -33,6 +34,8 @@ const Contact = () => {
 
     return (
         <div className="contact">
+            <Lines />
+
             <div className="contact-inner">
                 <h1>Get in touch!</h1>
                 <p>Do you fancy saying hi to me or ask me a question? Feel free to contact me through any of the channels below.</p>
