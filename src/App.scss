@@ -8,6 +8,7 @@ $dark: #454545;
 $white: #F7F7F7;
 $light: #F3F3F3;
 $test: #4e53d2;
+$red: #d02525;
 
 // Reset
 @import 'scss/reset';
@@ -16,6 +17,7 @@ $test: #4e53d2;
 @import 'scss/home/home';
 @import 'scss/not-found/not-found';
 @import 'scss/about/about';
+@import 'scss/contact/contact';
 
 // Components
 @import 'scss/components/nav';
@@ -23,3 +25,4 @@ $test: #4e53d2;
 @import 'scss/components/menu';
 @import 'scss/components/lines';
 @import 'scss/components/buttons';
+@import 'scss/components/inputs';

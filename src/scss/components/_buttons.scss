@@ -8,9 +8,19 @@
   font-family: 'Armata', sans-serif;
   font-weight: 700;
   transition: background-color .2s ease-in-out;
+  border: 0;
+
+  &:disabled {
+    background-color: $text_hover;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
 
   &:hover {
     background-color: $text_hover;
+    cursor: pointer;
   }
 }
 

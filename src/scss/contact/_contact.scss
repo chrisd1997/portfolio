@@ -1,0 +1,70 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .contact-inner {
+    h1 {
+      font-size: 64px;
+      font-family: 'Armata', sans-serif;
+    }
+
+    p {
+      width: 80%;
+      line-height: 30px;
+      font-family: 'Armata', sans-serif;
+    }
+
+    .form-wrapper {
+      display: flex;
+      flex-direction: row;
+      margin-top: 80px;
+
+      .channels {
+        width: 60%;
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            margin-bottom: 30px;
+
+            a {
+              display: flex;
+              color: $text;
+              text-decoration: none;
+              align-items: center;
+
+              .icon-wrapper {
+                margin-right: 20px;
+              }
+
+              span {
+                font-family: 'Armata', sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .form {
+        width: 100%;
+
+        .input-wrapper {
+          margin-bottom: 20px;
+        }
+
+        .action {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}

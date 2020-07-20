@@ -13,15 +13,17 @@ import {
     faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-    faGripLines
+    faGripLines,
+    faEnvelope,
+    faPhoneAlt,
 } from '@fortawesome/pro-light-svg-icons';
 
 import Home from "./Home";
 import Nav from "./Components/Nav";
-import Footer from "./Components/Footer";
 import Menu from "./Components/Menu";
 import NotFound from "./NotFound";
 import About from "./About";
+import Contact from "./Contact";
 
 library.add(
     faStackOverflow,
@@ -29,6 +31,8 @@ library.add(
     faLinkedinIn,
     faGithub,
     faGripLines,
+    faEnvelope,
+    faPhoneAlt,
 );
 
 function App() {
@@ -49,6 +53,9 @@ function App() {
                 </Route>
                 <Route exact path="/about">
                     <About />
+                </Route>
+                <Route exact path="/contact">
+                    <Contact />
                 </Route>
                 <Route path="*">
                     <NotFound />
