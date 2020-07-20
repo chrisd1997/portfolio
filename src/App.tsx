@@ -17,9 +17,11 @@ import {
 } from '@fortawesome/pro-light-svg-icons';
 
 import Home from "./Home";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
 import Nav from "./Components/Nav";
+import Footer from "./Components/Footer";
+import Menu from "./Components/Menu";
+import NotFound from "./NotFound";
+import About from "./About";
 
 library.add(
     faStackOverflow,
@@ -38,16 +40,20 @@ function App() {
 
     return (
         <Router>
-            <Header toggleNav={toggleNav} />
-            <Nav open={navOpen} />
+            <Nav open={navOpen} toggleNav={toggleNav} />
+            <Menu open={navOpen} toggleNav={toggleNav} />
 
             <Switch>
                 <Route exact path="/">
-                <Home />
+                    <Home />
+                </Route>
+                <Route exact path="/about">
+                    <About />
+                </Route>
+                <Route path="*">
+                    <NotFound />
                 </Route>
             </Switch>
-
-            <Footer />
         </Router>
     );
 }

@@ -1,0 +1,49 @@
+.not-found {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 128px;
+      margin-bottom: 20px;
+      font-family: 'Armata', sans-serif;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-size: 32px;
+      font-family: 'Armata', sans-serif;
+      margin-bottom: 30px;
+    }
+
+    span {
+      font-family: 'Armata', sans-serif;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+  }
+
+  .image {
+    width: 30%;
+    height: 500px;
+    background-image: url('/images/404.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}

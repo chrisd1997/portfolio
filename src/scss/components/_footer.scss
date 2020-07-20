@@ -25,22 +25,6 @@ footer {
     margin-bottom: 50px;
   }
 
-  .button {
-    padding: 20px 50px;
-    border: 1px solid $white;
-    color: $white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 2px;
-    transition: all .2s ease-in-out;
-
-    &:hover {
-      background-color: $white;
-      color: $text;
-    }
-  }
-
   .copy {
     text-transform: uppercase;
     margin-bottom: 0;

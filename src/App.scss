@@ -10,12 +10,16 @@ $light: #F3F3F3;
 $test: #4e53d2;
 
 // Reset
-@import './scss/reset';
+@import 'scss/reset';
 
 // Pages
-@import './scss/home/home';
+@import 'scss/home/home';
+@import 'scss/not-found/not-found';
+@import 'scss/about/about';
 
 // Components
-@import 'scss/components/header';
-@import './scss/components/footer';
-@import './scss/components/nav';
+@import 'scss/components/nav';
+@import 'scss/components/footer';
+@import 'scss/components/menu';
+@import 'scss/components/lines';
+@import 'scss/components/buttons';

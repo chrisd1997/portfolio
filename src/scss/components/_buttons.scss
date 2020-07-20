@@ -1,0 +1,32 @@
+.button {
+  padding: 20px 50px;
+  background-color: $text;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Armata', sans-serif;
+  font-weight: 700;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: $text_hover;
+  }
+}
+
+.button-open {
+  padding: 18px 50px;
+  border: 2px solid $text;
+  color: $text;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Armata', sans-serif;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color: $text;
+    color: $white;
+  }
+}
