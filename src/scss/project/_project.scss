@@ -1,0 +1,116 @@
+.project-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  padding: 150px 200px;
+
+  .tag {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  header {
+    h1 {
+      font-size: 64px;
+      font-family: 'Armata', sans-serif;
+      margin-bottom: 30px;
+    }
+
+    .tags {
+      font-weight: 200;
+      font-family: 'Armata', sans-serif;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 40px;
+      color: $text_hover;
+    }
+
+    p {
+      width: 60%;
+      line-height: 30px;
+      font-family: 'Armata', sans-serif;
+      margin-bottom: 50px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 40px;
+
+        .icon-wrapper {
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+
+          .icon {
+            margin-right: 10px;
+          }
+        }
+
+        span {
+          text-transform: uppercase;
+          font-weight: 200;
+          font-family: 'Armata', sans-serif;
+          font-size: 12px;
+
+          a {
+            color: $text;
+            text-decoration: none;
+            transition: color .2s ease-in-out;
+
+            &:hover {
+              color: $text_hover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .preview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+    justify-content: space-between;
+
+    .image {
+      flex: 0 0 48%;
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      height: 500px;
+      margin-bottom: 50px;
+
+      &:last-child {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  .next {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+      font-size: 32px;
+      font-family: 'Armata', sans-serif;
+    }
+  }
+}

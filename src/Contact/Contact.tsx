@@ -36,6 +36,8 @@ const Contact = () => {
         <div className="contact">
             <Lines />
 
+            <span className="tag">Contact</span>
+
             <div className="contact-inner">
                 <h1>Get in touch!</h1>
                 <p>Do you fancy saying hi to me or ask me a question? Feel free to contact me through any of the channels below.</p>

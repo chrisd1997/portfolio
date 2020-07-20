@@ -16,6 +16,9 @@ import {
     faGripLines,
     faEnvelope,
     faPhoneAlt,
+    faCode,
+    faPencilPaintbrush,
+    faExternalLinkAlt,
 } from '@fortawesome/pro-light-svg-icons';
 
 import Home from "./Home";
@@ -24,6 +27,8 @@ import Menu from "./Components/Menu";
 import NotFound from "./NotFound";
 import About from "./About";
 import Contact from "./Contact";
+import Project from "./Project/Project";
+import ScrollToTop from "./Components/ScrollToTop";
 
 library.add(
     faStackOverflow,
@@ -33,6 +38,9 @@ library.add(
     faGripLines,
     faEnvelope,
     faPhoneAlt,
+    faCode,
+    faPencilPaintbrush,
+    faExternalLinkAlt,
 );
 
 function App() {
@@ -44,6 +52,8 @@ function App() {
 
     return (
         <Router>
+            <ScrollToTop />
+
             <Nav open={navOpen} toggleNav={toggleNav} />
             <Menu open={navOpen} toggleNav={toggleNav} />
 
@@ -56,6 +66,9 @@ function App() {
                 </Route>
                 <Route exact path="/contact">
                     <Contact />
+                </Route>
+                <Route exact path="/project/:slug">
+                    <Project />
                 </Route>
                 <Route path="*">
                     <NotFound />

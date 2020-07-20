@@ -6,6 +6,16 @@
   min-height: 100vh;
   position: relative;
 
+  .tag {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
   .contact-inner {
     h1 {
       font-size: 64px;

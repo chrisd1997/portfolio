@@ -90,7 +90,7 @@ const Home = (props : any) => {
                         </div>
                         <div className="project">
                             <div className="background" />
-                            <Link to="#">
+                            <Link to="/project/wrunit">
                                 <div className="index">
                                     <span>02</span>
                                 </div>
@@ -109,7 +109,7 @@ const Home = (props : any) => {
                         </div>
                         <div className="project">
                             <div className="background" />
-                            <Link to="#">
+                            <Link to="/project/lunna">
                                 <div className="index">
                                     <span>03</span>
                                 </div>
@@ -128,7 +128,7 @@ const Home = (props : any) => {
                         </div>
                         <div className="project">
                             <div className="background" />
-                            <Link to="#">
+                            <Link to="/project/waddenhulp">
                                 <div className="index">
                                     <span>04</span>
                                 </div>
@@ -147,7 +147,7 @@ const Home = (props : any) => {
                         </div>
                         <div className="project">
                             <div className="background" />
-                            <Link to="#">
+                            <Link to="/project/redmijnwebsite">
                                 <div className="index">
                                     <span>05</span>
                                 </div>
