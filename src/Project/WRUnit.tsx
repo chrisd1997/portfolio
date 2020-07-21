@@ -14,7 +14,7 @@ const WRUnit = () => {
             <header>
                 <h1>WRUnit.nl Website</h1>
                 <span className="tags">Website / Webshop / CMS</span>
-                <p>WR Unit is specialized in building materials and started growing in 2008 to be the successful company it is today. They recently moved their company to a larger area and with this move also requested a new website.</p>
+                <p>WR Unit specializes in building materials and started growing in 2008 to be the successful company it is today. They recently moved their company to a larger area and with this move also requested a new website.</p>
                 <p>The website is created using the Laravel (PHP) framework and the use of SCSS/SASS, HTML5 and jQuery. The Lunna CMS has been implemented for easy content management.</p>
 
                 <ul>

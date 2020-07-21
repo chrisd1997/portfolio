@@ -13,5 +13,23 @@
     height: 100%;
     border-right: 1px solid $light;
     width: 100%;
+
+    @media(max-width: 700px) {
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+
+    @media(max-width: 530px) {
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+
+    @media(max-width: 320px) {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
   }
 }
