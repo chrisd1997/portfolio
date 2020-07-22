@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Icon from '../Components/Icon';
 import {
     Link
@@ -6,11 +6,47 @@ import {
 import Footer from "../Components/Footer";
 import Lines from "../Components/Lines";
 
+interface Project {
+    title: string,
+    tags: string[],
+    color: string,
+    slug: string,
+}
+
+const getRandomColor = () => {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 const Home = (props : any) => {
+    const [projects, _] = useState([
+        {
+            title: 'WRUnit.nl Website',
+            tags: ['Website', 'Webshop', 'CMS'],
+            color: getRandomColor(),
+            slug: 'wrunit',
+        },
+        {
+            title: 'Lunna CMS',
+            tags: ['Website', 'CMS'],
+            color: getRandomColor(),
+            slug: 'lunna',
+        },
+        {
+            title: 'Waddenhulp Website',
+            tags: ['Website', 'CMS'],
+            color: getRandomColor(),
+            slug: 'waddenhulp',
+        },
+    ]);
+
     return (
         <>
             <div className="home">
-
                 <Lines />
 
                 <header>
@@ -69,101 +105,27 @@ const Home = (props : any) => {
                     </div>
 
                     <div className="projects-wrapper">
-                        <div className="project">
-                            <div className="background" />
-                            <Link to="#">
-                                <div className="index">
-                                    <span>01</span>
-                                </div>
-                                <div className="content">
-                                    <h4>Chants.io Web & App</h4>
-                                    <span>Web Platform / Mobile App / CMS</span>
-                                </div>
-                                <div className="action">
-                                    <div className="action-inner">
-                                        <div className="action-background" />
-                                        <div className="arrow" />
-                                        <span>View Project</span>
+                        {projects.map((project : Project, index : number) => (
+                            <div className="project">
+                                <div className="background" style={{backgroundColor: project.color}} />
+                                <Link to={`/project/${project.slug}`}>
+                                    <div className="index">
+                                        <span>{(index + 1) < 10 ? '0' + (index + 1) : (index + 1)}</span>
                                     </div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="project">
-                            <div className="background" />
-                            <Link to="/project/wrunit">
-                                <div className="index">
-                                    <span>02</span>
-                                </div>
-                                <div className="content">
-                                    <h4>WRUnit.nl Website</h4>
-                                    <span>Website / Webshop / CMS</span>
-                                </div>
-                                <div className="action">
-                                    <div className="action-inner">
-                                        <div className="action-background" />
-                                        <div className="arrow" />
-                                        <span>View Project</span>
+                                    <div className="content">
+                                        <h4>{project.title}</h4>
+                                        <span>{project.tags.map((value, index) => value + ((index + 1) < project.tags.length ? ' / ' : ''))}</span>
                                     </div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="project">
-                            <div className="background" />
-                            <Link to="/project/lunna">
-                                <div className="index">
-                                    <span>03</span>
-                                </div>
-                                <div className="content">
-                                    <h4>Lunna CMS</h4>
-                                    <span>Website / CMS</span>
-                                </div>
-                                <div className="action">
-                                    <div className="action-inner">
-                                        <div className="action-background" />
-                                        <div className="arrow" />
-                                        <span>View Project</span>
+                                    <div className="action">
+                                        <div className="action-inner">
+                                            <div className="action-background" />
+                                            <div className="arrow" />
+                                            <span>View Project</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="project">
-                            <div className="background" />
-                            <Link to="/project/waddenhulp">
-                                <div className="index">
-                                    <span>04</span>
-                                </div>
-                                <div className="content">
-                                    <h4>Waddenhulp Website</h4>
-                                    <span>Website / CMS</span>
-                                </div>
-                                <div className="action">
-                                    <div className="action-inner">
-                                        <div className="action-background" />
-                                        <div className="arrow" />
-                                        <span>View Project</span>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="project">
-                            <div className="background" />
-                            <Link to="/project/redmijnwebsite">
-                                <div className="index">
-                                    <span>05</span>
-                                </div>
-                                <div className="content">
-                                    <h4>RedMijnWebsite.nl Website</h4>
-                                    <span>Website / CMS</span>
-                                </div>
-                                <div className="action">
-                                    <div className="action-inner">
-                                        <div className="action-background" />
-                                        <div className="arrow" />
-                                        <span>View Project</span>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
+                                </Link>
+                            </div>
+                        ))}
                     </div>
                 </section>
             </div>
