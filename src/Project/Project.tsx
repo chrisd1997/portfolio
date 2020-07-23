@@ -8,6 +8,7 @@ import Lines from "../Components/Lines";
 import Icon from "../Components/Icon";
 import Button from "../Components/Button";
 import projects from '../data/projects.json';
+import Tag from "../Components/Tag";
 
 const Project = () => {
     let { slug } = useParams();
@@ -25,10 +26,10 @@ const Project = () => {
             <div className="project-page">
                 <Lines />
 
-                <span className="tag">Project</span>
+                <Tag text="Project" />
 
                 <header>
-                    <h1>{project.title}</h1>
+                    <h1 className="load-text">{project.title}</h1>
                     <span className="tags">{project.tags.map((value, index) => value + ((index + 1) < project.tags.length ? ' / ' : ''))}</span>
                     <div dangerouslySetInnerHTML={{__html: project.content}} />
 

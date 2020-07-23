@@ -9,8 +9,8 @@ const Projects = () => {
             <Lines />
 
             <div className="header">
-                <h2>The latest</h2>
-                <span>These are my most recent projects.</span>
+                <h2 className="load-text">The latest</h2>
+                <span className="load-text">These are my most recent projects.</span>
             </div>
 
             <div className="projects-wrapper">

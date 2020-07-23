@@ -19,20 +19,6 @@
     padding: 100px 20px;
   }
 
-  .tag {
-    position: fixed;
-    left: 20px;
-    top: 50%;
-    transform: rotate(-90deg);
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-
-    @media(max-width: 470px) {
-      display: none;
-    }
-  }
-
   .contact-inner {
     h1 {
       font-size: 64px;

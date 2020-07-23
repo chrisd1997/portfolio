@@ -1,18 +1,20 @@
 import React from "react";
 import Lines from "../Components/Lines";
 import Button from "../Components/Button";
+import Tag from "../Components/Tag";
 
 const About = () => {
     return (
         <div className="about">
-            <span className="tag">About</span>
+
+            <Tag text="About" />
 
             <Lines />
 
             <header>
                 <div className="content">
-                    <h1>Hi, I'm Chris.</h1>
-                    <h4>A Dutch front-end & app developer</h4>
+                    <h1 className="load-text">Hi, I'm Chris.</h1>
+                    <h4 className="load-text">A Dutch front-end & app developer</h4>
                 </div>
                 <div className="image" />
             </header>

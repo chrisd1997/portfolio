@@ -21,20 +21,8 @@
   }
 
   .tag {
-    position: fixed;
-    left: 20px;
-    top: 50%;
-    transform: rotate(-90deg);
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-
     @media(max-width: 500px) {
       left: 20px;
-    }
-
-    @media(max-width: 420px) {
-      display: none;
     }
   }
 

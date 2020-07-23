@@ -1,6 +1,42 @@
 [
   {
     "id": 1,
+    "title": "Chants.io Web & App",
+    "tags": [
+      "Website", "App"
+    ],
+    "color": "#E8D33F",
+    "slug": "chants",
+    "images": [
+      "/images/chants_01.png",
+      "/images/chants_02.png",
+      "/images/chants_03.png"
+    ],
+    "content": "<p>Chants.io is a website monitoring tool. The free monitoring app makes Chants different from all of the other monitoring tools.</p><p>The website is created using the React.JS library and the use of SCSS/SASS and HTML5 while the app is created using React Native. The Lunna CMS has been implemented in the landings page easy content management.</p>",
+    "design": "<a href=\"https://www.instagram.com/kevin.rinsma/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Kevin Rinsma</a>",
+    "source": "",
+    "link": null
+  },
+  {
+    "id": 2,
+    "title": "RedMijnWebsite.nl Website",
+    "tags": [
+      "Website", "CMS"
+    ],
+    "color": "#37393A",
+    "slug": "redmijnwebsite",
+    "images": [
+      "/images/rmw_01.jpg",
+      "/images/rmw_02.jpg",
+      "/images/rmw_03.png"
+    ],
+    "content": "<p>RedMijnWebsite.nl is the company I created with my companion Kevin Rinsma. The core business is creating custom websites and adding whatever the customer wants.</p><p>The website is created using the Laravel (PHP) framework and the use of SCSS/SASS, HTML5 and jQuery. The Lunna CMS has been implemented for easy content management.</p>",
+    "design": "<a href=\"https://www.instagram.com/kevin.rinsma/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Kevin Rinsma</a>",
+    "source": "",
+    "link": "<a href=\"https://redmijnwebsite.nl\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">redmijnwebsite.nl</a>"
+  },
+  {
+    "id": 3,
     "title": "WRUnit.nl Website",
     "tags": [
       "Website", "Webshop", "CMS"
@@ -18,7 +54,7 @@
     "link": "<a href=\"https://wrunit.nl\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">wrunit.nl</a>"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Lunna CMS",
     "tags": [
       "Website", "CMS"
@@ -36,7 +72,7 @@
     "link": null
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "Waddenhulp Website",
     "tags": [
       "Website", "CMS"

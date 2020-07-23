@@ -1,11 +1,9 @@
 import React from 'react';
 import Icon from '../Components/Icon';
-import {
-    Link
-} from "react-router-dom";
 import Footer from "../Components/Footer";
 import Lines from "../Components/Lines";
-import projects from '../data/projects.json';
+import projects from "../data/projects.json";
+import {Link} from "react-router-dom";
 
 const Home = () => {
     return (
@@ -51,8 +49,8 @@ const Home = () => {
                         </ul>
                     </div>
                     <div className="header-content">
-                        <h1>Chris Dekker</h1>
-                        <span>Front-end Developer</span>
+                        <h1 className="load-text">Chris Dekker</h1>
+                        <span className="load-text">Front-end Developer</span>
                     </div>
                     <div className="image" />
 

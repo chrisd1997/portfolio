@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Icon from "../Components/Icon";
 import Lines from "../Components/Lines";
+import Tag from "../Components/Tag";
 
 const Contact = () => {
     const [fields, setFields] = useState({
@@ -36,11 +37,11 @@ const Contact = () => {
         <div className="contact">
             <Lines />
 
-            <span className="tag">Contact</span>
+            <Tag text="Contact" />
 
             <div className="contact-inner">
-                <h1>Get in touch!</h1>
-                <p>Do you fancy saying hi to me or ask me a question? Feel free to contact me through any of the channels below.</p>
+                <h1 className="load-text">Get in touch!</h1>
+                <p className="load-text">Do you fancy saying hi to me or ask me a question? Feel free to contact me through any of the channels below.</p>
 
                 <div className="form-wrapper">
                     <div className="channels">
