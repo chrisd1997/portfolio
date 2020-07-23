@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "WRUnit.nl Website",
+    "tags": [
+      "Website", "Webshop", "CMS"
+    ],
+    "color": "#415A77",
+    "slug": "wrunit",
+    "images": [
+      "/images/wrunit_01.jpg",
+      "/images/wrunit_02.jpg",
+      "/images/wrunit_03.png"
+    ],
+    "content": "<p>WR Unit specializes in building materials and started growing in 2008 to be the successful company it is today. They recently moved their company to a larger area and with this move also requested a new website.</p><p>The website is created using the Laravel (PHP) framework and the use of SCSS/SASS, HTML5 and jQuery. The Lunna CMS has been implemented for easy content management.</p>",
+    "design": "<a href=\"https://www.instagram.com/kevin.rinsma/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Kevin Rinsma</a>",
+    "source": "",
+    "link": "<a href=\"https://wrunit.nl\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">wrunit.nl</a>"
+  },
+  {
+    "id": 2,
+    "title": "Lunna CMS",
+    "tags": [
+      "Website", "CMS"
+    ],
+    "color": "#C44900",
+    "slug": "lunna",
+    "images": [
+      "/images/lunna_01.jpg",
+      "/images/lunna_02.jpg",
+      "/images/lunna_03.png"
+    ],
+    "content": "<p>Lunna is a content management system (CMS) developed to make the CMS experience as simple as possible. Just enough functionality and easy to use. The CMS is currently being used by multiple customers of my company RedMijnWebsite.nl.</p><p>The CMS is created using the Laravel (PHP) framework and the use of SCSS/SASS, HTML5 and jQuery. It also has an SSO system implemented for easy access by RMW employees.</p>",
+    "design": "<a href=\"https://www.instagram.com/kevin.rinsma/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Kevin Rinsma</a>",
+    "source": "",
+    "link": null
+  },
+  {
+    "id": 3,
+    "title": "Waddenhulp Website",
+    "tags": [
+      "Website", "CMS"
+    ],
+    "color": "#5C164E",
+    "slug": "waddenhulp",
+    "images": [
+      "/images/waddenhulp_01.jpg",
+      "/images/waddenhulp_02.jpg",
+      "/images/waddenhulp_03.jpg"
+    ],
+    "content": "<p>WaddenHulp is young team of skilled people who love to help others with their technology problems. Questions about your television, (mobile) phone or computer, they can help you out!</p><p>The website is created using the Laravel (PHP) framework and the use of SCSS/SASS, HTML5 and jQuery. The Lunna CMS has been implemented for easy content management.</p>",
+    "design": "<a href=\"https://www.instagram.com/kevin.rinsma/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Kevin Rinsma</a>",
+    "source": "",
+    "link": "<a href=\"https://waddenhulp.nl\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">waddenhulp.nl</a>"
+  }
+]

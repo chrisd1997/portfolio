@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-const Footer = (props : any) => {
+const Footer = () => {
     return (
         <footer>
             <h2>Let's talk!</h2>

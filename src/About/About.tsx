@@ -2,7 +2,7 @@ import React from "react";
 import Lines from "../Components/Lines";
 import Button from "../Components/Button";
 
-const About = (props : any) => {
+const About = () => {
     return (
         <div className="about">
             <span className="tag">About</span>

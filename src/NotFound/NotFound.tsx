@@ -3,7 +3,7 @@ import {
     Link,
 } from "react-router-dom";
 
-const NotFound = (props : any) => {
+const NotFound = () => {
     return (
         <div className="not-found">
             <div className="line-wrapper">

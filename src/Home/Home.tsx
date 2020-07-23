@@ -1,49 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Icon from '../Components/Icon';
 import {
     Link
 } from "react-router-dom";
 import Footer from "../Components/Footer";
 import Lines from "../Components/Lines";
+import projects from '../data/projects.json';
 
-interface Project {
-    title: string,
-    tags: string[],
-    color: string,
-    slug: string,
-}
-
-const getRandomColor = () => {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-
-const Home = (props : any) => {
-    const [projects, _] = useState([
-        {
-            title: 'WRUnit.nl Website',
-            tags: ['Website', 'Webshop', 'CMS'],
-            color: getRandomColor(),
-            slug: 'wrunit',
-        },
-        {
-            title: 'Lunna CMS',
-            tags: ['Website', 'CMS'],
-            color: getRandomColor(),
-            slug: 'lunna',
-        },
-        {
-            title: 'Waddenhulp Website',
-            tags: ['Website', 'CMS'],
-            color: getRandomColor(),
-            slug: 'waddenhulp',
-        },
-    ]);
-
+const Home = () => {
     return (
         <>
             <div className="home">
@@ -106,11 +70,11 @@ const Home = (props : any) => {
 
                     <div className="projects-wrapper">
                         {projects.map((project : Project, index : number) => (
-                            <div className="project">
+                            <div className="project" key={index}>
                                 <div className="background" style={{backgroundColor: project.color}} />
                                 <Link to={`/project/${project.slug}`}>
                                     <div className="index">
-                                        <span>{(index + 1) < 10 ? '0' + (index + 1) : (index + 1)}</span>
+                                        <span>{(project.id) < 10 ? '0' + (project.id) : (project.id)}</span>
                                     </div>
                                     <div className="content">
                                         <h4>{project.title}</h4>

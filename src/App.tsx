@@ -29,6 +29,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Project from "./Project/Project";
 import ScrollToTop from "./Components/ScrollToTop";
+import Projects from "./Projects";
 
 library.add(
     faStackOverflow,
@@ -66,6 +67,9 @@ function App() {
                 </Route>
                 <Route exact path="/contact">
                     <Contact />
+                </Route>
+                <Route exact path="/projects">
+                    <Projects />
                 </Route>
                 <Route exact path="/project/:slug">
                     <Project />
