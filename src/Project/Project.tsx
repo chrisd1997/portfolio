@@ -14,14 +14,15 @@ const Project = () => {
     let { slug } = useParams();
 
     const project = projects.filter((project : Project) => project.slug === slug)[0];
-    const nextProject = projects.filter((project_ : Project) => {
-        const nextId = (project.id + 1 > projects.length ? 1 : project.id + 1);
-        return project_.id === nextId;
-    })[0];
 
     if (!project) {
         return <NotFound />;
     } else {
+        const nextProject = projects.filter((project_ : Project) => {
+            const nextId = (project.id + 1 > projects.length ? 1 : project.id + 1);
+            return project_.id === nextId;
+        })[0];
+
         return (
             <div className="project-page">
                 <Lines />
