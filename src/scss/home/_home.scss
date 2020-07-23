@@ -37,6 +37,7 @@
         margin: 0;
         animation: links .6s ease-in-out forwards;
         animation-delay: .4s;
+        transform: translateX(-200%);
 
         li {
           &:not(:last-child) {
