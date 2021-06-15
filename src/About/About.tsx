@@ -20,7 +20,7 @@ const About = () => {
             </header>
 
             <section className="text">
-                <p>Hi, my name is Chris Dekker. I'm a 24 year old front-end & app developer currently living in The Netherlands. Programming has been a great part of my life for some time now, I started my first website when I was 14 years old. With my 5+ years of work experience being a web developer and DevOps engineer I'm currently available for the next challenge. I'm currently aiming for a remote job to expand my horizon. I'd love to work and travel, meet new people, and to learn new things in general. Feel free to contact me to say hi or if you have any questions.</p>
+                <p>Hi, my name is Chris Dekker. I'm a 24 year old software engineer & mobile app developer currently living in The Netherlands. Programming has been a great part of my life for some time now, I started my first website when I was 14 years old. With my 5+ years of work experience being a web developer and DevOps engineer I'm currently available for the next challenge. I'm currently aiming for a remote job to expand my horizon. I'd love to work and travel, meet new people, and to learn new things in general. Feel free to contact me to say hi or if you have any questions.</p>
 
                 <div className="actions">
                     <Button style="default" text="Download my resume" link="/files/Chris_Dekker_-_Software_Engineer_US.pdf" internal={false} />
