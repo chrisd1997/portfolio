@@ -50,7 +50,7 @@ const Home = () => {
                     </div>
                     <div className="header-content">
                         <h1 className="load-text">Chris Dekker</h1>
-                        <span className="load-text">Front-end Developer</span>
+                        <span className="load-text">Software Engineer</span>
                     </div>
                     <div className="image" />
 
