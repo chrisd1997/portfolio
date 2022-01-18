@@ -68,6 +68,7 @@ const Project = () => {
 
                 <div className="next">
                     <h4>Next: {nextProject.title}</h4>
+                    {/* eslint-disable-next-line react/style-prop-object */}
                     <Button style="default" text="Continue Reading" link={`/project/${nextProject.slug}`} internal={true} />
                 </div>
             </div>
